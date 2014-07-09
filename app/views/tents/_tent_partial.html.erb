@@ -1,1 +1,29 @@
-<p>some content</p>
+<h1>Tents</h1>
+<table>
+  <tr>
+    <th>Dimensions</th>
+    <th>Name</th>
+    <th>Tent Price</th>
+    <th>Square Feet</th>
+    <th>Round 60" Tables</th>
+    <th>People</th>
+    <th>Banquet 8' Tables</th>
+    <th>People</th>
+    <th>Total Price</th>
+    <th>Standing People</th>
+  </tr>
+  <% @tents.each do |tent|%>
+   <tr>
+    <td><%= tent.dimensions%></td>
+    <td><%= tent.tent_type%></td>
+    <td><%= tent.tent_price%></td>
+    <td><%= tent.size%></td>
+    <td><%= tent.round_5_tables%></td>
+    <td><%= tent.round_5_people%></td>
+    <td><%= tent.banquet_8_tables%></td>
+    <td><%= tent.banquet_8_people%></td>
+    <td><%= tent.final_price%></td>
+    <td><%= tent.low_max_standing%> - <%= tent.high_max_standing%></td>
+   </tr>
+  <%end%>
+</table>

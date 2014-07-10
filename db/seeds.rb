@@ -132,3 +132,79 @@ Tent.create( 	dimensions: "40x80",
 							low_max_standing: 515,
 							high_max_standing: 550
 							)
+#sidewall,
+Accessories.create( accessory_type:  :sidewall.to_s,
+									name: "Solid White",
+									price: 1,
+									price_unit: "ft"
+									)
+Accessories.create( accessory_type:  :sidewall.to_s,
+									name: "Mesh",
+									price: 1,
+									price_unit: "ft"
+									)
+Accessories.create( accessory_type:  :sidewall.to_s,
+									name: "French Window",
+									price: 1.25,
+									price_unit: "ft"
+									)
+Accessories.create( accessory_type:  :kwik_cover.to_s,
+									name: "Kwic Cover",
+									price: 4 ,
+									price_unit: "unit"
+									)
+Accessories.create( accessory_type:  :strobe.to_s,
+									name: "35 ft strand",
+									price: 10, 
+									price_unit: "strand"
+									)
+Accessories.create( accessory_type:  :table.to_s,
+									name: "8' x 30\" Banquet",
+									price: 10 ,
+									price_unit: "unit"
+									)
+Accessories.create( accessory_type:  :table.to_s,
+									name: "60\" Round",
+									price: 10 ,
+									price_unit: "unit"
+									)
+Accessories.create( accessory_type:  :table.to_s,
+									name: "30\" Cocktail (legs 30\" or 42\")",
+									price: 10 ,
+									price_unit: "unit"
+									)
+Accessories.create( accessory_type:  :dance_floor.to_s,
+									name: "Dance Floor (12'x12')",
+									price: 100 ,
+									price_unit: "unit"
+									)
+Accessories.create( accessory_type:  :chair.to_s,
+									name: "Blue",
+									price: 1,
+									price_unit: "unit"
+									)
+Accessories.create( accessory_type:  :chair.to_s,
+									name: "Beige",
+									price: 1,
+									price_unit: "unit"
+									)
+Accessories.create( accessory_type:  :chair.to_s,
+									name: "Gray",
+									price: 1,
+									price_unit: "unit"
+									)
+Accessories.create( accessory_type:  :chair.to_s,
+									name: "White",
+									price: 1,
+									price_unit: "unit"
+									)
+Accessories.create( accessory_type:  :super_cooler.to_s,
+									name: "Super Cooler (holds 6 cases of cans, or 1 keg)",
+									price: 15,
+									price_unit: "unit"
+									)
+Accessories.create( accessory_type:  :rectangular_cooler.to_s,
+									name: "Long Rectangular Cooler (holds 30 gallons)",
+									price: 15,
+									price_unit: "unit"
+									)

@@ -1,0 +1,10 @@
+<% Accessories::Types.each do |type_key, type_name| %>
+	<h2><%= type_name %></h2>
+	<ul>
+		<% Accessories.where(accessory_type: type_key.to_s).each do |a| %>
+			<li>
+				<%= a.name %>
+			</li>
+		<% end %>
+	</ul>
+<% end %>

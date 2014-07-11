@@ -148,7 +148,7 @@ Accessories.create( accessory_type:  :sidewall.to_s,
 									price: 1.25,
 									price_unit: "ft"
 									)
-Accessories.create( accessory_type:  :kwik_cover.to_s,
+Accessories.create( accessory_type:  :kwic_cover.to_s,
 									name: "Kwic Cover",
 									price: 4 ,
 									price_unit: "unit"

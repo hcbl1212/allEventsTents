@@ -3,7 +3,7 @@
 	<ul>
 		<% Accessories.where(accessory_type: type_key.to_s).each do |a| %>
 			<li>
-				<%= a.name %>
+				<%= a.name %> - <%= number_to_currency(a.price, :unit => "$") %>/<%= a.price_unit %>
 			</li>
 		<% end %>
 	</ul>

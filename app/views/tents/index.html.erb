@@ -2,10 +2,10 @@
   <div id="tabs">
     <ul>
       <li><%=link_to"About Us","#tabs-1"%></li>
-      <li><%=link_to"Tents","#tabs-2"%></li>
+      <li><%=link_to"Tent Pricing","#tabs-2"%></li>
       <li><%=link_to"Accessories","#tabs-3"%></li>
     </ul>
-    <div id="tabs-1">place holder for about us partial</div>
+    <div id="tabs-1"><%= render 'about_us'%></div>
     <div id="tabs-2"><%= render 'tent_partial'%></div>
     <div id="tabs-3"><%= render 'accessories_partial' %></div>
   </div>

@@ -1,0 +1,5 @@
+<div>
+  <%Dir.glob('**/**/*.{jpg,png,gif}').each do|pic|%>
+    <%= image_tag "#{pic}" %>
+ <%end%>
+</div>

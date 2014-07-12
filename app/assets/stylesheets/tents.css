@@ -1,10 +1,18 @@
 .tent_main{
   width: 100%;
-  margin-top: 45px;
   float: left;
 }
 .center_text{
   text-align:center;
+}
+.banner_styles{
+   margin-right: auto;
+   margin-left: auto;
+   width:720px;
+   height:375px;
+   margin-top:0;
+   margin-bottom: 0;
+   border:solid black;
 }
 th{
   border-bottom: double #aaffff;

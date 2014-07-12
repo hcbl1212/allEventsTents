@@ -1,5 +1,5 @@
 <div>
-  <%Dir.glob('**/**/*.{jpg,png,gif}').each do|pic|%>
-    <%= image_tag "#{pic}" %>
+  <%Dir.glob('app/assets/images/tent_pictures/*/*\.{jpg,png,gif}').each do|pic|%>
+    <%= image_tag "#{pic.gsub("app/assets/images/", "")}" %>
  <%end%>
 </div>

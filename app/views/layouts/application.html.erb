@@ -35,9 +35,16 @@
     <%= favicon_link_tag 'favicon.ico', :rel => 'shortcut icon' %>
 
     <%= javascript_include_tag "application" %>
+      <!--[if gte IE 9]>
+      <style type="text/css">
+          .gradient {
+           filter: none;
+        }
+      </style>
+    <![endif]-->
   </head>
   <div class='banner_styles'>
-    <%= image_tag "banner-photo.jpg", style:'height:375px'%>
+    <%= image_tag "banner-photo.png", style:'height:225px;width:1170px;'%>
   </div>
 
     <div class="container">
@@ -60,7 +67,10 @@
         </div><!--/row-->
 
       <footer>
-        <p>&copy; All Events Tents 2014</p>
+      <p>&copy; All Events Tents 2014 |  <%=link_to "Email Us!","mailto: alleventstents@gmail.com?subject=Tent Contact"%> | 
+       (989)798-2112 or (989)341-1580 | 
+       <%= link_to image_tag ('facebook_32.png'),url: "http://www.facebook.com/All-Events-Tents-LLC",:target => '_blank'%> </p> 
+        
       </footer>
 
     </div> <!-- /container -->

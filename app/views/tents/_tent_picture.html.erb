@@ -4,16 +4,16 @@
 
 
 	<% child_folders.each do |folder| %>
-		<h3><%= folder.gsub('_',' ').capitalize %></h3>
+		<h3><%= folder.gsub(/(_|by)/,'_'=>' ','by'=> "X").to_s.capitalize%></h3>
     <div>
-    <p>
-		<% child_files = Dir[File.join(root_path, folder, "*")].collect{|name| name.split("/").last} %>
-		<ul>
-			<% child_files.each do |file| %>
-				<li><%= image_tag "#{file}" %></li>
-			<% end %>
-		</ul>
-    </p>
+      <p>
+		    <% child_files = Dir[File.join(root_path, folder, "*")].collect{|name| name.split("/").last} %>
+		    <ul>
+		    	<% child_files.each do |file| %>
+		    		<li><%=link_to image_tag "#{file}", class: 'gallery' %></li>
+		    	<% end %>
+		    </ul>
+      </p>
     </div>
 	<% end %>
 </div>

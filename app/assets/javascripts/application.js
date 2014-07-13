@@ -12,5 +12,7 @@
 //= require jquery
 //= require jquery.ui.all
 //= require jquery_ujs
+//= require jquery.colorbox
+///= require jquery.colorbox-pl
 //= require twitter/bootstrap
 //= require_tree .

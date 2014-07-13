@@ -5,6 +5,9 @@
 .center_text{
   text-align:center;
 }
+.no_bullet{
+  list-style-type: none;
+}
 .test_quote{
     margin-top:35px;
     text-indent:10px;
@@ -13,6 +16,7 @@
     border-bottom:1px solid #e3e3e3;
     margin-right: 0;
 }
+
 body{
 background: #e9f6fd; /* Old browsers */
 /* IE9 SVG, needs conditional override of 'filter' to 'none' */

@@ -43,36 +43,21 @@
       </style>
     <![endif]-->
   </head>
-  <div class='banner_styles'>
-    <%= image_tag "banner-photo.png", style:'height:175px;width:1000px;margin-left:85px'%>
-  </div>
+
 
     <div class="container">
         <div class="row">
-          <div class="span9">
+          <div class='banner_styles'>
+             <%= image_tag "banner-photo.png", style:'height:175px;width:960px;'%>
+          </div>
             <%= bootstrap_flash %>
             <%= yield %>
-          </div>
-          <div class="span3">
-            <div class="well sidebar-nav">
-              <h3>Navigation</h3>
-              <ul class="nav nav-list">
-                <li class="nav-header">Sidebar</li>
-                <li><%= link_to "Home", "#"  %></li>
-                <li><%= link_to "Tent Pricing", "#"  %></li>
-                <li><%= link_to "Accessories", "#"  %></li>
-                <li><%= link_to "Tent Gallery", "#"  %></li>
-                <li><%= link_to "Contact Us", "#"  %></li>
-              </ul>
-            </div><!--/.well -->
-          </div><!--/span-->
-        </div><!--/row-->
+          </div><!--/row-->
 
       <footer>
-      <p>&copy; All Events Tents 2014 |  <%=link_to "Email Us","mailto: alleventstents@gmail.com?subject=Tent Contact"%> | 
+      <p style="text-align: center">&copy; All Events Tents 2014 |  <%=link_to "Email Us","mailto: alleventstents@gmail.com?subject=Tent Contact"%> | 
        (989)798-2112 or (989)341-1580 | 
        <!-- Facebook Badge START --><a href="https://www.facebook.com/pages/All-Events-Tents-LLC/145164388934552" target="_TOP" title="All-Events Tents, LLC"><%=image_tag "facebook_32.png"  %></a><br/><!-- Facebook Badge END -->
-        
       </footer>
 
     </div> <!-- /container -->

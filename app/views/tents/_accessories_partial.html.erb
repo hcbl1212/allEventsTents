@@ -1,3 +1,5 @@
+<%= render :partial => 'price_advisory',:locals =>{:place => "top"}%>
+
 <% Accessories::Types.each do |type_key, type_name| %>
 	<h2><%= type_name %></h2>
 	<ul>
@@ -8,3 +10,5 @@
 		<% end %>
 	</ul>
 <% end %>
+<%= render :partial => 'price_advisory'%>
+

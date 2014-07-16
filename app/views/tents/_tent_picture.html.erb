@@ -3,17 +3,19 @@
 	<% child_folders = Dir[File.join(root_path, "*")].select{|file| File.ftype(file) == "directory"}.collect{|name| name.split("/").last} %>
 
 
-	<% child_folders.each do |folder| %>
-		<h3><%= folder.gsub(/(_|by)/,'_'=>' ','by'=> "X").to_s.capitalize%></h3>
+  <%gal_track = 1%>
+  <% child_folders.each do |folder| %>
+    <h3><%= folder.gsub(/(_|by)/,'_'=>' ','by'=> "X").split.map(&:capitalize).join(' ')%></h3>
     <div>
       <p>
-		    <% child_files = Dir[File.join(root_path, folder, "*")].collect{|name| name.split("/").last} %>
-		    <ul>
+		    <% child_files = Dir[File.join(root_path, folder,"thumbs", "*")].collect{|name| name.split("/").last} %>
 		    	<% child_files.each do |file| %>
-		    		<li><%=link_to image_tag "#{file}", class: 'gallery' %></li>
+          <a href="/assets/tent_pictures/<%=folder%>/<%=file%>"  class="gallery-<%=gal_track%>">
+            <img src = "/assets/tent_pictures/<%=folder%>/thumbs/<%=file%>" style="width:200px;height:150px;padding:2px;" />
+          </a>
 		    	<% end %>
-		    </ul>
       </p>
     </div>
+    <%gal_track+=1%>
 	<% end %>
 </div>

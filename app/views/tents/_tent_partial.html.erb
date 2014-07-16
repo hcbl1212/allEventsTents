@@ -1,16 +1,17 @@
+<%= render :partial => 'price_advisory',:locals=>{:place => "top"}%>
 <h1 class="center_text">Tent Pricing</h1>
-<table class="tentsTable">
+  <table class="tentsTable" summary="Lists the tents price.">
   <tr>
-    <th>Dimensions</th>
-    <th>Name</th>
-    <th>Tent Price</th>
-    <th>Square Feet</th>
-    <th>Round 60" Tables</th>
-    <th>People</th>
-    <th>Banquet 8' Tables</th>
-    <th>People</th>
-    <th>Total Price</th>
-    <th>Standing People</th>
+    <th title="Size of the tent">Dimensions</th>
+    <th title="Name for tent">Name</th>
+    <th title="Prices are subject to change and anytime">Tent Price</th>
+    <th title="Square footage of tent">Square Feet</th>
+    <th title="Size of table">Round 60" Tables</th>
+    <th title="# of people for 60 inch tables" >People</th>
+    <th title="Size of table">Banquet 8' Tables</th>
+    <th title="# of people for 8 ft. tables">People</th>
+    <th title="Accumulated price">Total Price</th>
+    <th title="Number of people who can stand in tent">Standing People</th>
   </tr>
   <% @tents.each do |tent|%>
    <tr>
@@ -31,3 +32,4 @@
    </tr>
   <%end%>
 </table>
+<%= render :partial => 'price_advisory'%>

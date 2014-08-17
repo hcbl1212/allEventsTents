@@ -2,8 +2,8 @@ class Accessories < ActiveRecord::Base
   attr_accessible :accessory_type, :name, :price, :price_unit
 	Types={
 		sidewall: "Side Walls",
-		kwic_cover: "Kwic Covers",
-		strobe: "Strobe lights",
+		kwic_cover: "Kwik Covers",
+		strobe: "Globe lights",
 		table: "Tables",
 		dance_floor: "Dance Floor (12'x12')",
 		chair: "Chairs",

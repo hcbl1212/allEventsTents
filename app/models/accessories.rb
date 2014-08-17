@@ -1,4 +1,5 @@
 class Accessories < ActiveRecord::Base
+  attr_accessible :accessory_type, :name, :price, :price_unit
 	Types={
 		sidewall: "Side Walls",
 		kwic_cover: "Kwic Covers",

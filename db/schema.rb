@@ -38,7 +38,4 @@ ActiveRecord::Schema.define(:version => 20140709203054) do
     t.datetime "updated_at",        :null => false
   end
 
-  create_table "test", :force => true do |t|
-  end
-
 end

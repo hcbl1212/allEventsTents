@@ -8,6 +8,8 @@ class Accessories < ActiveRecord::Base
 		dance_floor: "Dance Floor (12'x12')",
 		chair: "Chairs",
 		super_cooler: "Super Cooler",
-		rectangular_cooler: "Rectangular Cooler"
+		rectangular_cooler: "Rectangular Cooler",
+		portable_heater: "Portable Heaters"
 	}
 end
+

@@ -10,7 +10,6 @@
     <th title="# of people for 60 inch tables" >People</th>
     <th title="Size of table">Banquet 8' Tables</th>
     <th title="# of people for 8 ft. tables">People</th>
-    <th title="Accumulated price">Package Price</th>
     <th title="Number of people who can stand in tent">Standing People</th>
   </tr>
   <% @tents.each do |tent|%>
@@ -23,7 +22,6 @@
     <td><%= unless tent.round_5_people.nil? then tent.round_5_people else "N/A" end%></td>
     <td><%= unless tent.banquet_8_tables.nil? then tent.banquet_8_tables else "N/A" end%></td>
     <td><%= unless tent.banquet_8_people.nil? then tent.banquet_8_people else "N/A" end%></td>
-    <td><%= unless tent.final_price.nil? then tent.final_price else "N/A" end%></td>
     <td><%unless tent.low_max_standing.nil? || tent.high_max_standing.nil?%>
           <%= tent.low_max_standing %> - <%= tent.high_max_standing%></td>
         <%else%>

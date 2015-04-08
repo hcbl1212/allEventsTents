@@ -16,7 +16,7 @@
    <tr>
     <td><%= tent.dimensions %></td>
     <td><%= tent.tent_type%></td>
-    <td><%= tent.tent_price%></td>
+    <td><%= number_to_currency(tent.tent_price, :unit => "$")%></td>
     <td><%= unless tent.size.nil? then tent.size else "N/A" end%></td>
     <td><%= unless tent.round_5_tables.nil? then tent.round_5_tables else "N/A" end%></td>
     <td><%= unless tent.round_5_people.nil? then tent.round_5_people else "N/A" end%></td>

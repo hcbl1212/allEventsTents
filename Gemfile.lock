@@ -32,6 +32,8 @@ GEM
     builder (3.0.4)
     erubis (2.7.0)
     execjs (2.2.1)
+    foo_table-rails (2.0.1.5.1)
+      railties (>= 3.1)
     hike (1.2.3)
     httparty (0.13.1)
       json (~> 1.8)
@@ -113,6 +115,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  foo_table-rails
   jbuilder (~> 2.0)
   jquery-colorbox-rails
   jquery-rails

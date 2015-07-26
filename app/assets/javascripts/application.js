@@ -15,4 +15,5 @@
 //= require jquery.colorbox
 ///= require jquery.colorbox-pl
 //= require twitter/bootstrap
+//= require footable.core
 //= require_tree .

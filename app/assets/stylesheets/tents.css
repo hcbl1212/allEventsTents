@@ -118,11 +118,14 @@ th{
   font-family:Arial;
   font-weight:normal;
   color:#000000;
-}.tentsTable tr:last-child td{
+}
+/*.tentsTable tr:last-child td{
   border-width:0px 1px 0px 0px;
-}.tentsTable tr td:last-child{
+}
+.tentsTable tr td:last-child{
   border-width:0px 0px 1px 0px;
-}.tentsTable tr:last-child td:last-child{
+}
+.tentsTable tr:last-child td:last-child{
   border-width:0px 0px 0px 0px;
 }
 .tentsTable tr:first-child td{
@@ -151,4 +154,4 @@ th{
 }
 .tentsTable tr:first-child td:last-child{
   border-width:0px 0px 1px 1px;
-}
+}*/

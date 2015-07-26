@@ -1,5 +1,15 @@
 $(document).ready(function(){
-   $('#tabs').tabs();
+   $('#tabs').tabs({
+      activate: function(e, ui){
+            $('.footable').trigger('footable_resize');
+          }
+    });
+   $(".footable").footable({
+  		breakpoints: {
+  			phone: 480,
+  			tablet: 1024
+  		}	
+   });
    $( "#accordion" ).accordion({
       heightStyle: "content"
     });
@@ -14,7 +24,5 @@ $(document).ready(function(){
    $(".gallery-9").colorbox({rel: 'group9',maxWidth:'556px',maxHeight:'417px', title:"Tents" });
    $(".gallery-10").colorbox({rel: 'group10',maxWidth:'556px',maxHeight:'417px', title:"Tents" });
    $(".gallery-11").colorbox({rel: 'group11',maxWidth:'556px',maxHeight:'417px', title:"Tents" });
-   //$(document).tooltip();
    $("#cboxCurrent").remove();
-   //maxWidth, maxHeight, innerWidth, innerHeight
 });

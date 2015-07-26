@@ -12,6 +12,7 @@
  *= require jquery.ui.all
  *= require jquery-ui/redmond
  *= require jquery.colorbox-example1
+ *= require footable.core
  *= require_tree .
  *= require_self
  */

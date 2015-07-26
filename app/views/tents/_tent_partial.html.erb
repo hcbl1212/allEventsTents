@@ -1,33 +1,38 @@
 <%= render :partial => 'price_advisory',:locals=>{:place => "top"}%>
 <h1 class="center_text">Tent Pricing</h1>
-  <table class="tentsTable" summary="Lists the tents price.">
+  <table class="tentsTable footable" summary="Lists the tents price.">
+  <thead>	  
   <tr>
-    <th title="Size of the tent">Dimensions</th>
-    <th title="Name for tent">Name</th>
-    <th title="Prices are subject to change and anytime">Tent Price</th>
-    <th title="Square footage of tent">Square Feet</th>
-    <th title="Size of table">Round 60" Tables</th>
-    <th title="# of people for 60 inch tables" >People</th>
-    <th title="Size of table">Banquet 8' Tables</th>
-    <th title="# of people for 8 ft. tables">People</th>
-    <th title="Number of people who can stand in tent">Standing People</th>
+    <th title="Size of the tent" data-class="expand" >Dimensions</th>
+    <th title="Name for tent" data-sort-ignore="true">Name</th>
+    <th title="Prices are subject to change and anytime" data-sort-ignore="false" data-type="numeric">Tent Price</th>
+    <th title="Square footage of tent" data-hide="phone,tablet" data-type="numeric">Square Feet</th>
+    <th title="Size of table" data-hide="phone,tablet" data-type="numeric">Round 60" Tables</th>
+    <th title="# of people for 60 inch tables" data-hide="phone,tablet" data-type="numeric">People</th>
+    <th title="Size of table" data-hide="phone,tablet" data-type="numeric">Banquet 8' Tables</th>
+    <th title="# of people for 8 ft. tables" data-hide="phone,tablet" data-type="numeric">People</th>
+    <th title="Number of people who can stand in tent" data-hide="phone,tablet" data-type="numeric">Standing People</th>
   </tr>
-  <% @tents.each do |tent|%>
-   <tr>
-    <td><%= tent.dimensions %></td>
-    <td><%= tent.tent_type%></td>
-    <td><%= number_to_currency(tent.tent_price, :unit => "$")%></td>
-    <td><%= unless tent.size.nil? then tent.size else "N/A" end%></td>
-    <td><%= unless tent.round_5_tables.nil? then tent.round_5_tables else "N/A" end%></td>
-    <td><%= unless tent.round_5_people.nil? then tent.round_5_people else "N/A" end%></td>
-    <td><%= unless tent.banquet_8_tables.nil? then tent.banquet_8_tables else "N/A" end%></td>
-    <td><%= unless tent.banquet_8_people.nil? then tent.banquet_8_people else "N/A" end%></td>
-    <td><%unless tent.low_max_standing.nil? || tent.high_max_standing.nil?%>
-          <%= tent.low_max_standing %> - <%= tent.high_max_standing%></td>
-        <%else%>
-          N/A
-        <% end %>
-   </tr>
-  <%end%>
+  </thead>
+  <tbody>
+    <% @tents.each do |tent|%>
+      <tr>
+        <td><%= tent.dimensions %></td>
+        <td><%= tent.tent_type%></td>
+        <td><%= number_to_currency(tent.tent_price, :unit => "$")%></td>
+        <td><%= unless tent.size.nil? then tent.size else "N/A" end%></td>
+        <td><%= unless tent.round_5_tables.nil? then tent.round_5_tables else "N/A" end%></td>
+        <td><%= unless tent.round_5_people.nil? then tent.round_5_people else "N/A" end%></td>
+        <td><%= unless tent.banquet_8_tables.nil? then tent.banquet_8_tables else "N/A" end%></td>
+        <td><%= unless tent.banquet_8_people.nil? then tent.banquet_8_people else "N/A" end%></td>
+        <td><%unless tent.low_max_standing.nil? || tent.high_max_standing.nil?%>
+            <%= tent.low_max_standing %> - <%= tent.high_max_standing%>
+          <%else%>
+            N/A
+          <% end %>
+        </td> 
+      </tr>
+    <%end%>
+  </tbody>
 </table>
 <%= render :partial => 'price_advisory'%>

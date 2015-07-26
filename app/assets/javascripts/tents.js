@@ -7,7 +7,7 @@ $(document).ready(function(){
    $(".footable").footable({
   		breakpoints: {
   			phone: 480,
-  			tablet: 1024
+  			tablet: 900
   		}	
    });
    $( "#accordion" ).accordion({

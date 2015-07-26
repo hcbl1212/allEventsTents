@@ -1,2 +1,0 @@
-May need this for images:
-bundle exec rake assets:precompile

@@ -1,0 +1,8 @@
+<IfModule mod_passenger.c>
+Options -MultiViews
+PassengerResolveSymlinksInDocumentRoot on
+RailsEnv production
+#`RackBaseURI /
+RackBaseURI /$HOME/$USER/allEventsTents
+SetEnv GEM_HOME /home2/alleven9/ruby/gems
+</IfModule>

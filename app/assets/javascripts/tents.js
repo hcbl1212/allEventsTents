@@ -11,7 +11,8 @@ $(document).ready(function(){
   		}	
    });
    $( "#accordion" ).accordion({
-      heightStyle: "content"
+      heightStyle: "content",
+	  collapsible: true
     });
    $(".gallery-1").colorbox({rel: 'group1',maxWidth:'556px',maxHeight:'417px', title:"Tents" });
    $(".gallery-2").colorbox({rel: 'group2',maxWidth:'556px',maxHeight:'417px', title:"Tents" });

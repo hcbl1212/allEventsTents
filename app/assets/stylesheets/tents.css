@@ -100,11 +100,13 @@ th{
   -moz-border-radius-topright:12px;
   -webkit-border-top-right-radius:12px;
   border-top-right-radius:12px;
-}.tentsTable tr:last-child td:first-child{
+}
+.tentsTable tr:last-child td:first-child {
   -moz-border-radius-bottomleft:12px;
   -webkit-border-bottom-left-radius:12px;
   border-bottom-left-radius:12px;
-}.tentsTable tr:hover td{
+}
+.tentsTable tr:hover td{
   background-color:#56aaff;
 }
 .tentsTable td{
@@ -122,7 +124,7 @@ th{
 @media screen and (max-width:767px){
 	#tabs > ul > li {
 		min-width:122px;
-		margin-left:12px;
+		margin-left:11px;
 		margin-top:3px;
 	}
 }

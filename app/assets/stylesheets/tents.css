@@ -119,6 +119,10 @@ th{
   font-weight:normal;
   color:#000000;
 }
-#tabs > ul > li {
-	min-width:122px;
+@media screen and (max-width:767px){
+	#tabs > ul > li {
+		min-width:122px;
+		margin-left:12px;
+		margin-top:3px;
+	}
 }
